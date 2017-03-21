@@ -1,0 +1,35 @@
+
+@media screen and (max-width: 1280px){
+	
+
+}
+
+@media screen and (max-width: 1024px){
+
+}
+
+
+@media screen and (max-width: 980px) {
+	
+}
+
+@media screen and (max-width: 650px) {
+
+}
+
+@media screen and (max-width: 480px) {
+
+}
+
+
+img {
+   max-width: 100%;
+   height: auto;
+   width: auto\9; /* ie8 */
+}
+
+
+
+
+
+
