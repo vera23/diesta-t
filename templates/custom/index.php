@@ -30,19 +30,10 @@ define('YOURBASEPATH', dirname(__FILE__));
           href="<?php echo $this->baseurl; ?>/templates/<?php echo $this->template; ?>/css/style.less.css"
           type="text/css"/>
 
-    <?php //rmm section ?>
-    <link rel="stylesheet" href="<?php echo $this->baseurl; ?>/templates/<?php echo $this->template; ?>/css/rmm.css"
-          type="text/css"/>
-    <script type="text/javascript"
-            src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/javascript/rmm.js"/></script>
-    <?php //end rmm ?>
 
 
     <script src = "<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/javascript/html5shiv.js"
     type = "text/javascript" ></script>
-    <script src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/javascript/respond.min.js"
-            type="text/javascript"></script>
-    <![endif]-->
 
     <!--[if IE]>
     <link href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/css/ie.css" rel="stylesheet"
@@ -67,27 +58,30 @@ define('YOURBASEPATH', dirname(__FILE__));
     <script type="text/javascript" src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/javascript/jquery-1.8.3.min.js"/></script>
     <script type = "text/javascript" src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/javascript/core.js" / ></script>
 
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-
     <link href="<?php echo $this->baseurl; ?>/templates/<?php echo $this->template; ?>/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-    <script src="assets/bxslider/jquery.bxslider.min.js"></script>
+<!--    <script src="assets/bxslider/jquery.bxslider.min.js"></script>
     <!-- bxSlider CSS file -->
-    <link href="assets/bxslider/jquery.bxslider.css" rel="stylesheet"/>
-
+<!--    <link href="assets/bxslider/jquery.bxslider.css" rel="stylesheet"/>
+-->
     <link href="<?php echo $this->baseurl; ?>/templates/<?php echo $this->template; ?>/css/custom.css" rel="stylesheet">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 
-    <jdoc:include type="head"/>
+
+    <script src="<?php echo $this->baseurl; ?>/templates/<?php echo $this->template; ?>/bxslider/jquery.bxslider.min.js"></script>
+    <!-- bxSlider CSS file -->
+    <link href="<?php echo $this->baseurl; ?>/templates/<?php echo $this->template; ?>/bxslider/jquery.bxslider.css" rel="stylesheet"/>
+    <link href="<?php echo $this->baseurl; ?>/templates/<?php echo $this->template; ?>/css/slider-main.css" rel="stylesheet">
+
+<jdoc:include type="head"/>
 </head>
 
 <body>
-
 <?php
 $app = JFactory::getApplication();
 $menu = $app->getMenu();
 $isMain = $menu->getActive() == $menu->getDefault();
 ?>
-
 <?php if ($isMain) : ?>
     <style>
         #header {
@@ -129,12 +123,53 @@ $isMain = $menu->getActive() == $menu->getDefault();
         </div>
     </div>
 </div>
+<jdoc:include type="modules" name="slider"/>
 
-<jdoc:include type="modules" name="message"/>
-<jdoc:include type="message"/>
-<jdoc:include type="component"/>
+<div class="container">
+    <jdoc:include type="modules" name="calendar"/>
+    <jdoc:include type="modules" name="contact"/>
+    <jdoc:include type="modules" name="position-2"/>
+
+     <jdoc:include type="modules" name="message"/>
+     <jdoc:include type="message"/>
+     <jdoc:include type="component"/>
 
 
-<jdoc:include type="modules" name="debug"/>
+    <jdoc:include type="modules" name="debug"/>
+  <jdoc:include type="modules" name="main-news"/>
+</div>
+<jdoc:include type="modules" name="manufacturers"/>
+
+<div id="footer">
+    <div class="container">
+        <div class="col-lg-4 col-sm-4 col-xs-12 text-left padding-top-25">
+            @Copyright
+        </div>
+        <div class="col-lg-4 col-sm-4 col-xs-12 text-center padding-top-20">
+            <a href="#">
+                <img class="margin-right-10" src="<?php echo $this->baseurl; ?>/templates/<?php echo $this->template; ?>/images/fb.png">
+            </a>
+            <a href="#">
+                <img class="margin-right-10" src="<?php echo $this->baseurl; ?>/templates/<?php echo $this->template; ?>/images/fb.png">
+            </a>
+            <a href="#">
+                <img class="margin-right-10" src="<?php echo $this->baseurl; ?>/templates/<?php echo $this->template; ?>/images/twit.png">
+            </a>
+        </div>
+        <div class="col-lg-4 col-sm-4 col-xs-12 text-right">
+            <div class="col-lg-6 col-sm-6 col-xs-12">
+                119049, г. Москва,<br>
+                Ленинский проспект, 2<br>
+                e-mail: email@mail.ru
+            </div>
+            <div class="col-lg-6 col-sm-6 col-xs-12">
+                тел/факт: (495)495-45-78<br>
+                тел/факт: (495)495-45-78<br>
+            </div>
+        </div>
+    </div>
+</div>
+
+
 </body>
 </html>

@@ -15,7 +15,7 @@
     border-top: 1px solid transparent;
 }
 
-#menu-ul li a:hover, .active {
+#menu-ul li a:hover, #menu-ul li a:hover.active {
     background-color: transparent;
     color: #135381;
     border-top: 1px solid #135381;
@@ -23,6 +23,11 @@
 
 .fsize-11 {
     font-size: 11px;
+}
+
+.label-news-info {
+    padding: 3px 15px;
+    text-align: center;
 }
 
 body {
@@ -70,11 +75,26 @@ body {
 }
 
 #advertising {
-    margin-top: -55%;
+    margin-top: -45%;
     color: white;
     background-color: rgba(0, 97, 167, 0.8);
     padding: 25px 70px 100px;
     font-family: "tahoma bold";
+}
+
+.label-info {
+    background-color: #0061A7;
+    font-size: 13px;
+}
+
+.news-title-link {
+    color: #0061A7;
+    font-size: 18px;
+}
+
+.pagination>li>a, .pagination>li>span {
+    color: #0061A7;
+
 }
 
 .tahoma-bold {
@@ -169,12 +189,35 @@ body {
     margin-top: 15px;
 }
 
+.breadcrumb {
+    padding: 8px 15px;
+    margin-bottom: 20px;
+    list-style: none;
+    background-color: white;
+    border-radius: 4px;
+}
+
+.breadcrumb>li+li:before {
+    padding: 0 5px;
+    color: red;
+    content: none;
+}
+
+.breadcrumb {
+    margin: 35px 0 0 -20px;
+}
+
 .header {
     text-transform: uppercase;
     font-size: 1.4em;
     font-family: "tahoma bold";
-    margin: 100px 0 25px;
+    margin: 20px 0 50px;
     text-align: center;
+}
+
+#news > .header {
+    margin-top: 100px;
+
 }
 
 .margin-bottom-85 {
@@ -197,6 +240,10 @@ body {
     margin-top: -110px;
 }
 
+a {
+    color: #225980!important;
+}
+
 .padding-top-20 {
     padding-top: 20px;
 }
@@ -211,7 +258,9 @@ body {
     line-height: 25px;
     background-color: #414143;
     border-top: 4px solid #900100;
+    /*
     height: 114px;
+    */
     color: #a1a1a3;
     width: inherit;
 }
@@ -362,4 +411,10 @@ th, td {
 table tr td{
     background-color: #ededed;
     color: #464646;
+}
+
+@media (max-width: 600px) {
+     .text-right {
+       text-align: center;
+    }
 }

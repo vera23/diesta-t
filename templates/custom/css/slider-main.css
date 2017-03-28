@@ -1,0 +1,65 @@
+.bx-wrapper {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: none;
+    background: transparent;
+    margin: 0;
+}
+.slider {
+    z-index: -1;
+    border-bottom: 3px solid #4bcaff;
+}
+
+.slider img {
+    width: 100%;
+}
+.bx-pager-link {
+    background: #0061a8;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a:hover, .bx-wrapper .bx-pager.bx-default-pager a.active, .bx-wrapper .bx-pager.bx-default-pager a:focus {
+    background: #0061a8;
+    width: 15px;
+    height: 15px;
+    border-radius: 8px;;
+}
+.bx-wrapper .bx-pager.bx-default-pager a {
+    margin: -76px 5px 0;
+    width: 12px;
+    height: 12px;
+    border: 1px solid white;
+    background: #f2f6f9;
+    opacity: 0.9;
+    border-radius: 7px;;
+}
+
+.bx-wrapper .bx-next {
+    right: 10px;
+    background: url(../images/control-right.png) no-repeat;
+}
+
+.bx-wrapper .bx-next:hover, .bx-wrapper .bx-next:focus {
+    background-position: 0 0 ;
+    opacity: 1;
+}
+
+.bx-wrapper .bx-prev:focus, .bx-wrapper .bx-prev:hover {
+    opacity: 1;
+
+}
+
+.bx-wrapper .bx-controls-direction a {
+    height: 53px;
+    opacity: 0.6;
+}
+
+table tr td{
+    background-color: #ededed;
+    color: #464646;
+}
+
+.bx-wrapper .bx-prev {
+    left: 10px;
+    background: url(../images/control-left.png) no-repeat;
+}

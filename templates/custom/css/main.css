@@ -15,6 +15,10 @@ a{
 input{
 	outline:none;
 }
+img.provider-logo {
+    max-height: 180px;
+}
+
 
 input[type="text"]:focus {
 	outline: none;
