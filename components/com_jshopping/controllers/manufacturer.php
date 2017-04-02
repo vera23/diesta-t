@@ -15,7 +15,7 @@ class JshoppingControllerManufacturer extends JshoppingControllerBase{
         JPluginHelper::importPlugin('jshoppingproducts');
         JDispatcher::getInstance()->trigger('onConstructJshoppingControllerManufacturer', array(&$this));
     }
-	
+
 	function display($cachable = false, $urlparams = false){        
         $params = JFactory::getApplication()->getParams();        
 		$jshopConfig = JSFactory::getConfig();

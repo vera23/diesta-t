@@ -29,7 +29,7 @@ class JshoppingControllerManufacturers extends JshoppingControllerBaseadmin{
         $filter_order = $mainframe->getUserStateFromRequest($context.'filter_order', 'filter_order', "ordering", 'cmd');
         $filter_order_Dir = $mainframe->getUserStateFromRequest($context.'filter_order_Dir', 'filter_order_Dir', "asc", 'cmd');
         $manufacturer = JSFactory::getModel("manufacturers");
-        $rows = $manufacturer->getAllManufacturers(0, $filter_order, $filter_order_Dir);        
+        $rows = $manufacturer->getAllManufacturers(0, $filter_order, $filter_order_Dir);
         $view = $this->getView("manufacturer", 'html');
         $view->setLayout("list");
         $view->assign('rows', $rows);

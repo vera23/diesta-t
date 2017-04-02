@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_SLIDER_SLIDERS_VIEW_ITEM_TITLE">
+		<help key="SLIDERS_DESC"	/>
+		<message>COM_SLIDER_SLIDERS_VIEW_ITEM_DESC</message>
+	</layout>	
+	<!-- Fields for Joomla > 1.5. -->
+	<fields name="request" addfieldpath="/administrator/components/com_slider/models/fields/">
+		<fieldset name="request">
+			<field name="id"
+				type="sliderSliders"				
+				label="COM_SLIDER_SLIDERS_FIELD_ID_LABEL"
+				description="COM_SLIDER_SLIDERS_FIELD_ID_DESC"
+				required="true"
+			/>
+		</fieldset>
+	</fields>	
+	<!-- Add fields to the parameters object for the layout. -->
+	<fields name="params">
+		<fieldset name="PARAMS">			<field 
+				name="show_category"
+				type="radio"
+				class="btn-group"
+				default="1"			
+				label="COM_SLIDER_SLIDERS_FIELD_SHOWCATEGORY_LABEL"
+				description="COM_SLIDER_SLIDERS_FIELD_SHOWCATEGORY_DESC"
+			>			
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+			</field>
+			<field 
+				name="param2"
+				type="list"
+				default="1"			
+				label="COM_SLIDER_SLIDERS_FIELD_PARAM2_LABEL"
+				description="COM_SLIDER_SLIDERS_FIELD_PARAM2_DESC"
+			>
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+			</field>
+		</fieldset>
+		<fieldset name="MEDIA">			<field 
+				name="param3"
+				type="media"	
+				label="COM_SLIDER_SLIDERS_FIELD_PARAM3_LABEL"
+				description="COM_SLIDER_SLIDERS_FIELD_PARAM3_DESC"
+			>			
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+			</field>
+		</fieldset>
+	</fields>
+</metadata>

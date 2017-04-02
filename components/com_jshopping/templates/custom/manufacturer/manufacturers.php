@@ -1,4 +1,4 @@
-<?php 
+<?php
 /**
 * @version      4.9.1 13.08.2013
 * @author       MAXXmarketing GmbH
@@ -8,7 +8,7 @@
 */
 defined('_JEXEC') or die('Restricted access');
 ?>
-<?php if ($this->params->get('show_page_heading') && $this->params->get('page_heading')) : ?>    
+<?php if ($this->params->get('show_page_heading') && $this->params->get('page_heading')) : ?>
     <div class="shophead<?php print $this->params->get('pageclass_sfx');?>">
         <h1><?php print $this->params->get('page_heading')?></h1>
     </div>
@@ -24,11 +24,11 @@ defined('_JEXEC') or die('Restricted access');
     <div class="jshop_list_manufacturer">
         <div class = "jshop">
             <?php foreach($this->rows as $k=>$row) : ?>
-            
+
                 <?php if ($k % $this->count_manufacturer_to_row == 0) : ?>
                     <div class = "row-fluid">
                 <?php endif; ?>
-                
+
                 <div class = "sblock<?php echo $this->count_manufacturer_to_row?> jshop_categ manufacturer">
                     <div class = "sblock2 image">
                         <a href = "<?php print $row->link;?>">
@@ -53,19 +53,19 @@ defined('_JEXEC') or die('Restricted access');
                         <?php endif; ?>
                     </div>
                 </div>
-                
+
                 <?php if ($k % $this->count_manufacturer_to_row == $this->count_manufacturer_to_row - 1) : ?>
                     <div class = "clearfix"></div>
                     </div>
                 <?php endif; ?>
-                
+
             <?php endforeach; ?>
-            
+
             <?php if ($k % $this->count_manufacturer_to_row != $this->count_manufacturer_to_row - 1) : ?>
                 <div class = "clearfix"></div>
                 </div>
             <?php endif; ?>
-            
+
         </div>
     </div>
     <?php endif; ?>

@@ -14,15 +14,15 @@ class JshoppingModelManufacturers extends JshoppingModelBaseadmin{
     protected $nameTable = 'manufacturer';
     protected $tableFieldPublish = 'manufacturer_publish';
 
-    function getAllManufacturers($publish=0, $order=null, $orderDir=null, $limit = null){
+    function getAllManufacturers($publish=0, $order=null, $orderDir=null){
         $db = JFactory::getDBO();
-        $lang = JSFactory::getLang(); 
+        $lang = JSFactory::getLang();
         $query_where = ($publish)?(" WHERE manufacturer_publish = '1'"):("");  
         $queryorder = '';        
         if ($order && $orderDir){
             $queryorder = "order by ".$order." ".$orderDir;
         }
-        $query = "SELECT manufacturer_id, manufacturer_url, manufacturer_logo, manufacturer_publish, ordering, `".$lang->get('name')."` as name FROM `#__jshopping_manufacturers` $query_where ".$queryorder . $limit ? "Limit" . $limit : '';
+        $query = "SELECT manufacturer_id, manufacturer_url, manufacturer_logo, manufacturer_publish, ordering, `".$lang->get('name')."` as name FROM `#__jshopping_manufacturers` $query_where ".$queryorder;
         extract(js_add_trigger(get_defined_vars(), "before"));
         $db->setQuery($query);
         return $db->loadObjectList();

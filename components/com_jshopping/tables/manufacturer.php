@@ -28,7 +28,7 @@ class jshopManufacturer extends JTableAvto implements jshopProductListInterface{
 				  FROM `#__jshopping_manufacturers` $query_where ORDER BY ".$orderby." ".$dir;
 		$db->setQuery($query);
 		$list = $db->loadObjectList();
-		
+
 		foreach($list as $key=>$value){
             $list[$key]->link = SEFLink('index.php?option=com_jshopping&controller=manufacturer&task=view&manufacturer_id='.$list[$key]->manufacturer_id);
         }

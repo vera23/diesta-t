@@ -553,7 +553,7 @@ return 1;
 function displayTextJSC(){
     $conf = JSFactory::getConfig();
     if (getJsFrontRequestController()!='content' && !compareX64(replaceWWW(getJHost()),$conf->licensekod)){
-        print $conf->copyrightText;
+        //print $conf->copyrightText;
     }
 }
 

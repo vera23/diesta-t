@@ -8,9 +8,9 @@
 */
 defined('_JEXEC') or die('Restricted access');
 ?>
-<div class="jshop" id="comjshop">
+<div class="jshop margin-bottom-85" id="comjshop">
 
-    <h1><?php print $this->manufacturer->name?></h1>
+    <h1 class="header margin-bottom-85"><?php print $this->manufacturer->name?></h1>
     
     <div class="manufacturer_description">
         <?php print $this->manufacturer->description;?>

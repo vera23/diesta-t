@@ -1,11 +1,7 @@
-
-
-<div id="providers">
-    <div class="container text-center">
+    <div class="container text-center  margin-bottom-85">
         <h3 class="header margin-bottom-85">
             Поставщики
         </h3>
-        <a href="#" class="all-link pull-right">Все поставщики</a>
         <div class="row">
             <?php foreach($list as $curr):?>
                 <a href="<?php echo  $curr->link?>">
@@ -19,4 +15,3 @@
             <?php endforeach; ?>
         </div>
     </div>
-</div>

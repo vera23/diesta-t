@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="Home">
+		<help
+			key = "Home_DESC"
+		/>
+		<message>
+			<![CDATA[Home_DESC]]>
+		</message>
+	</layout>
+	<!-- Add fields to the parameters object for the layout. -->
+	<fields name="params">
+		<fieldset name="request"
+			addfieldpath="/administrator/components/com_slider/models/fields"
+		>
+			<field name="sample"
+				type="text"
+				description="Enter sample text"
+				label="Sample text"
+				required="false"
+			/>
+		</fieldset>
+	</fields>
+</metadata>

@@ -19,7 +19,7 @@
     JSFactory::loadCssFiles();
     JSFactory::loadLanguageFile();
     $jshopConfig = JSFactory::getConfig(); 
-    
+
     $order = $params->get('sort', 'id');
     $direction = $params->get('ordering', 'asc');
     $show_image = $params->get('show_image', 1);

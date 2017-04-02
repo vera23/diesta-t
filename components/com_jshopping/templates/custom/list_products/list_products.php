@@ -15,12 +15,10 @@ defined('_JEXEC') or die('Restricted access');
         <div class = "row-fluid">
     <?php endif; ?>
     
-    <div class = "sblock<?php echo $this->count_product_to_row;?>">
-        <div class = "block_product">
+        <div class = "block_product col-sm-3 col-md-3 col-xs-12">
             <?php include(dirname(__FILE__)."/".$product->template_block_product);?>
         </div>
-    </div>
-            
+
     <?php if ($k % $this->count_product_to_row == $this->count_product_to_row - 1) : ?>
         <div class = "clearfix"></div>
         </div>

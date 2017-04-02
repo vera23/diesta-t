@@ -128,16 +128,16 @@ $isMain = $menu->getActive() == $menu->getDefault();
 <div class="container">
     <jdoc:include type="modules" name="calendar"/>
     <jdoc:include type="modules" name="contact"/>
-    <jdoc:include type="modules" name="position-2"/>
-
+<!--    <jdoc:include type="modules" name="position-2"/>
+-->
      <jdoc:include type="modules" name="message"/>
      <jdoc:include type="message"/>
-     <jdoc:include type="component"/>
 
 
     <jdoc:include type="modules" name="debug"/>
   <jdoc:include type="modules" name="main-news"/>
 </div>
+<jdoc:include type="modules" name="manufacturers-main"/>
 <jdoc:include type="modules" name="manufacturers"/>
 
 <div id="footer">

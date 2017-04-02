@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.0" type="plugin" group="system" method="upgrade">
+	<name>PLG_SYSTEM_DEEASYINSTALL</name>
+	<author>Surinder Singh &lt;br&gt; &lt;a href="http://developerextensions.com" target="_blank" &gt;http://developerextensions.com&lt;/a&gt;</author>
+	<creationDate>April 2012</creationDate>
+	<copyright>(C) 2015 - 2017 DeveloperExtensions.com. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see	LICENSE.txt</license>
+	<authorEmail>surinder83singh@gmail.com</authorEmail>
+	<authorUrl>www.developerextensions.com</authorUrl>
+	<version>3.0.2</version>
+	<description>PLG_SYSTEM_DEEASYINSTALL_XML_DESCRIPTION</description>
+	<files>
+		<file plugin="deeasyinstall">deeasyinstall.php</file>
+		<scriptfile>install.script.php</scriptfile>
+    	<filename>index.html</filename>
+    	<folder>libs</folder>
+    	<folder>fields</folder>
+    	<folder>language</folder>
+    	<folder>layout</folder>
+	</files>
+	<scriptfile>install.script.php</scriptfile>
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.plg_system_deeasyinstall.ini</language>
+		<language tag="en-GB">en-GB/en-GB.plg_system_deeasyinstall.sys.ini</language>
+	</languages>
+	<config addfieldpath="/plugins/system/deeasyinstall/fields">
+		<fields name="params">
+			<fieldset name="PARAMS">
+				<field name="urlfilter" type="text" default="developerextensions.com" description="PLG_SYSTEM_DEEASYINSTALL_URLFILTER_DESC" label="PLG_SYSTEM_DEEASYINSTALL_URLFILTER_LABEL" />
+				<field name="totpkey" type="detotp" default="" description="PLG_SYSTEM_DEEASYINSTALL_SECRETKEY_DESC" label="PLG_SYSTEM_DEEASYINSTALL_SECRETKEY_LABEL" />
+				<field name="totpkeyclient" type="detotpclient" class="btn-group" default="googleapp" description="PLG_SYSTEM_DEEASYINSTALL_SECRETKEYCLIENT_DESC" label="PLG_SYSTEM_DEEASYINSTALL_SECRETKEYCLIENT_LABEL" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>

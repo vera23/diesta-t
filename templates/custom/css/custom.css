@@ -25,6 +25,10 @@
     font-size: 11px;
 }
 
+.product-block {
+    max-width: 90%;
+}
+
 .label-news-info {
     padding: 3px 15px;
     text-align: center;
@@ -241,7 +245,35 @@ body {
 }
 
 a {
+    /*
     color: #225980!important;
+    */
+}
+
+
+.product-div {
+    border: 1px solid #30536f;
+    border-radius: 3px;
+    height: 250px;
+}
+
+.name {
+    height: 48px;
+    background-color: #0061a6;
+    width: 100%;
+    color: white;
+}
+
+#sort_count {
+
+}
+
+.image {
+    width:100%;
+}
+
+.image img {
+    margin: 0 auto;
 }
 
 .padding-top-20 {
@@ -250,6 +282,16 @@ a {
 
 .padding-top-25 {
     padding-top: 20px;
+}
+
+.image {
+    height: 200px;
+
+}
+
+.jshop_img {
+    max-width: 80%;
+    max-width: 180px;
 }
 
 #footer {

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<form>
+	<fields>
+		<field
+			name="id"
+			type="hidden"
+			default="0"
+			required="true"
+			readonly="true" />
+		<field
+			name="description"
+			required="true"
+			type="text"
+			label="COM_SLIDER_SLIDERS_FIELD_DESCRIPTION_LABEL"
+			description="COM_SLIDER_SLIDERS_FIELD_DESCRIPTION_DESC"
+			class="input"
+			size="40" />
+		<field
+			name="published"
+			type="list"
+			class="inputbox"
+			default="1"
+			size="1"
+			required="false"
+			label="JFIELD_PUBLISHED_LABEL"
+			description="JFIELD_PUBLISHED_DESC">
+				<option value="1">JOPTION_PUBLISHED</option>
+				<option value="0">JOPTION_UNPUBLISHED</option>
+				<option value="-1">JOPTION_ARCHIVED</option>
+				<option value="-2">JOPTION_TRASHED</option>
+		</field>
+		<field
+			name="created"
+			type="calendar"
+			required="false"
+			label="COM_SLIDER_SLIDERS_FIELD_CREATED_LABEL"
+			description="COM_SLIDER_SLIDERS_FIELD_CREATED_DESC"
+			class="input-medium"
+			size="16"
+			format="%Y-%m-%d %H:%M:%S" />
+		<field
+			name="created_by"
+			required="false"
+			type="user"
+			label="COM_SLIDER_SLIDERS_FIELD_CREATED_BY_LABEL"
+			description="COM_SLIDER_SLIDERS_FIELD_CREATED_BY_DESC"
+			class="input-medium"
+			size="40" />
+		<field
+			name="created_by_alias"
+			required="false"
+			type="text"
+			label="COM_SLIDER_SLIDERS_FIELD_CREATED_BY_ALIAS_LABEL"
+			description="COM_SLIDER_SLIDERS_FIELD_CREATED_BY_ALIAS_DESC"
+			class="input-medium"
+			size="40" />
+		<field
+			name="modified"
+			required="false"
+			type="text"
+			label="COM_SLIDER_SLIDERS_FIELD_MODIFIED_LABEL"
+			description="COM_SLIDER_SLIDERS_FIELD_MODIFIED_DESC"
+			class="input-medium"
+			readonly="true"
+			size="40" />
+		<field
+			name="modified_by"
+			required="false"
+			type="user"
+			label="COM_SLIDER_SLIDERS_FIELD_MODIFIED_BY_LABEL"
+			description="COM_SLIDER_SLIDERS_FIELD_MODIFIED_BY_DESC"
+			class="input-medium"
+			readonly="true"
+			size="40" />
+		<field
+			name="checked_out"
+			type="hidden"
+			filter="unset" />
+		<field
+			name="checked_out_time"
+			type="hidden"
+			filter="unset" />
+		<field
+			name="image"
+			type="file"
+			label="COM_SLIDER_SLIDERS_FIELD_IMAGE_LABEL"
+			accept="audio/*,video/*,image/*"
+			required="1"
+			validate=""
+			description="COM_SLIDER_SLIDERS_FIELD_IMAGE_DESC"
+			size="40"
+			class="input" />
+		<field
+			name="ordering"
+			type="hidden"
+			filter="unset" />
+		<field
+			name="old_price"
+			required="false"
+			type="text"
+			label="COM_SLIDER_SLIDERS_FIELD_OLD_PRICE_LABEL"
+			description="COM_SLIDER_SLIDERS_FIELD_OLD_PRICE_DESC"
+			class="input"
+			size="40" />
+		<field
+			name="new_price"
+			required="false"
+			type="text"
+			label="COM_SLIDER_SLIDERS_FIELD_NEW_PRICE_LABEL"
+			description="COM_SLIDER_SLIDERS_FIELD_NEW_PRICE_DESC"
+			class="input"
+			size="40" />
+		<field
+			name="rules"
+			type="rules"
+			label="COM_SLIDER_SLIDERS_FIELD_RULES_LABEL"
+			filter="rules"
+			validate="rules"
+			class="inputbox"
+			component="com_slider"
+			section="slider"
+			/>
+	</fields>
+</form>
